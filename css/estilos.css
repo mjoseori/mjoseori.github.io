@@ -1,0 +1,521 @@
+/*Estilos generales*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    color: rgb(141, 5, 153);
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+a activo {
+    color: rgb(197, 5, 43);
+}
+
+p {
+    padding: 10px;
+    line-height: 1.5em;
+    color: darkblue;
+}
+
+/* Animaciones */
+@keyframes intermitente {
+    0% {opacity: 0}
+    50% {opacity: 1}
+    100% {opacity: 0}
+}
+
+/*Cabecera con logo y barra de navegacion*/
+
+header {
+    display: flex;
+    border: solid;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+header a img {
+    margin-top: 30px;
+   margin: 10px;
+   padding: 10px;
+
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 30px;
+}
+
+header .burguer {
+    display: none;
+    color: beige;
+    font-size: 34px;
+}
+
+.linea {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*Sección hero*/
+
+.hero {
+    height: 100vh;
+    background-image: url('../img/piso lujoso.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+h3 {
+    text-align: center;
+    box-shadow: 5px cornflowerblue;
+    font-size: 30px;
+    padding: 20px 20px;
+}
+
+.primera {
+    position: absolute;
+    bottom: -35px;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 50px;
+    height: 60px;
+    width: 60px;
+    color: rgb(155, 21, 233);
+    background-color: rgb(107, 5, 110);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+}
+
+.contenedor30 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+    
+/*Layout*/
+
+.fila {
+    padding: 40px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.col1 {
+    padding: 60px;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.col3 {
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 3;
+}
+
+.col100 {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paginacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+    
+.pagina {
+        background-color: white;
+        color: black;
+        border: 1px solid rgb(241, 86, 241);
+}
+
+/*Footer*/
+
+footer {
+    color: rgb(5, 2, 15);
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#d492c7;
+    background-size: 16px;
+    position: relative;  
+}
+
+footer p {
+    color: black;
+}
+
+.minifooter p {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.top {
+    position: absolute;
+    top: -35px;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 50px;
+    height: 60px;
+    width: 60px;
+    color: rgb(155, 21, 233);
+    background-color: rgb(107, 5, 110);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+
+    /* transition-property: transform;
+    transition-duration: 1s; */
+}
+
+.legales a {
+    font-size: 18px;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.izda {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.dcha {
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.centro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Sección con imagen de fondo*/
+
+.fondo {
+    padding: 40px 40px 160px 40px;
+    background-image: url('../img/casa con llave.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.slogan {
+    font-size: 36px;
+    text-align: center;
+    color: rgb(16, 31, 161);
+    text-shadow: 4px 4px 2px rgb(86, 81, 155);
+}
+
+/* Formulario newsletter */
+
+.input_news {
+    color: rgb(202, 16, 140);
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 20px;
+    border: 4px solid rgb(202, 16, 140);
+}
+
+.input_sub {
+    margin: 40px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 10px 20px;
+    background-color: rgb(202, 16, 140);
+    /* background: -webkit-linear-gradient(top, rgb(234, 92, 28), rgb(233, 66, 21)); */
+    border: 4px solid rgb(202, 16, 140);
+}
+
+.input_sub:hover {
+    cursor: pointer;
+    background-color: rgb(167, 76, 144);
+    border: 4px solid rgb(202, 16, 140);
+    
+}
+
+.input_news:focus, .input_sub:focus {
+    outline: none;
+}
+
+.newsletter {
+    color: rgb(202, 16, 140);
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+.ultima {
+    margin-bottom: 40px;}
+
+/*Páginas de compra y alquileres*/
+
+.contenedor {
+    /*Receta Grid para colocación automática de 
+    filas y columnas*/
+    padding-top: 200px;
+        display: grid;
+        grid-template-columns:repeat(auto-fit, 300px);
+        /*Auto-fit crea tantas columnas como necesitemos
+        del ancho especificado*/
+        grid-template-rows: repeat(2, 400px);
+        grid-gap: 40px;
+        justify-content: space-around;
+}
+
+.tarjeta {
+        width: 300px;
+        height: 500px;
+        box-shadow: 2px 2px 4px grey;
+        background-color: burlywood;
+}
+    
+.imagen {
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 15%;
+}
+
+.imagen img {
+        height: 300px;
+}
+
+.boton {
+        height: 100px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+}
+
+.btn {
+        background-color: crimson;
+        color: white;
+        font-size: 16px;
+        padding: 5px;
+        border-radius: 10px;
+        text-decoration: none;
+        border-bottom: 4px solid rgb(82, 4, 4);
+}
+
+.btn:hover {
+        color: darkred;
+}
+
+.datos {
+        height: 100px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+}
+    
+
+/* --------------------------------------------------------------------
+--------------------------------------------------------------------
+-------------------------------------------------------------------- */
+/* Media QUERIES */
+
+@media (min-width : 800px) {
+    footer .izda, footer .centro, footer .dcha {
+        flex-basis: 200px;
+    }
+}
+
+@media (max-width: 800px){
+    nav {display: none;}
+
+header .burguer {
+    display: initial;
+}
+
+    footer .izda, footer .centro, footer .dcha {
+        flex-basis: 200px;
+    }
+    
+}
+
+@media (max-width : 775px){
+    .separador {
+        display: initial;
+    }
+
+    /* Cambia la disposicion de las filas a columnas */
+    .fila {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Se disminuye un poco los margenes y el tamaño de los botones */
+    .boton{
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    /* Se disminuye el boton de submit */
+    .input_sub {
+        margin: 20px;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    /* Se resetea el basis de las columnas */
+    .col1 {
+        flex-basis: initial;
+    }
+
+
+    /* Se cambia el tamaño de las imagenes */
+    .fila div img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 640px){
+
+    /* Se cambia el tamaño del encabezado del hero */
+    .hero h1{
+        font-size: 36px;
+    }
+    
+    .hero h2{
+        font-size: 30px;
+    }
+
+    /* Se disminuye el boton de submit */
+    .input_sub {
+        margin: 20px;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    /* Se disminuye el tamaño del input-text */
+    .input_news {
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .ultima{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    /* Se baja un poco el texto del footer para que no colapse con el boton */
+    .grande {
+        margin-top: 10px;
+    }
+    
+}
+
+@media (max-width: 450px){
+
+    /* Se disminuye el tamaño de letra general de la web */
+    body {
+        font-size: 18px;
+    }
+
+     /* Se cambia el tamaño del encabezado del hero */
+    .hero h1{
+        font-size: 26px;
+    }
+    
+    .hero h2{
+        font-size: 20px;
+    }
+
+    /* Se reduce el padding de las filas */
+    .fila {
+        padding: 20px 10px;
+    }
+
+    .fila a {
+        font-size: 16px;
+    }
+
+    .fila div img {
+        height: 160px;
+    }
+
+    .slogan {
+        font-size: 24px;
+    }
+
+    .col100 .newsletter {
+        padding: 5px;   
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .input_news, .input_sub {
+        font-size: 16px;
+        padding: 10px;
+        margin: 5px 5px 20px 5px;
+    }
+
+    .dcha a {
+        font-size: 30px;
+    }
+    
+}
+

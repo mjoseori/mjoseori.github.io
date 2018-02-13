@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Serif', serif;
+    color: rgb(141, 5, 153);
+}
+
+/*Cabecera con logo y barra de navegacion*/
+
+header {
+    display: flex;
+    border: solid;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+header a img {
+    margin-top: 30px;
+   margin: 10px;
+   padding: 10px;
+
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 30px;
+}
+
+header .burguer {
+    display: none;
+    color: beige;
+    font-size: 34px;
+}
+
+.linea {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+p {
+    padding: 10px;
+    line-height: 1.5em;
+    color: darkblue;
+}
+
+/*Formulario*/
+
+.conten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.fila {
+    display: flex;
+}
+
+.col50 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+}
+
+form {
+    border: 2px solid rgb(189, 47, 255);
+    margin:40px 0 -40px;
+    width: 50%;
+    padding: 10px;
+    box-shadow: 4px, 4px,16 rgb(152, 20, 156);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    color: rgb(5, 2, 15);
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#d492c7;
+    background-size: 16px;
+    position: relative; 
+}
+
+footer p {
+    color: black;
+}
+
+.minifooter p {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.legales a {
+    font-size: 18px;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+    
+.izda {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+    
+.dcha {
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    font-size: 40px;
+}
+    
+.centro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+.col1 {
+    padding: 60px;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.col100 {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -170,12 +170,16 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
     
 .pagina {
         background-color: white;
         color: black;
         border: 1px solid rgb(241, 86, 241);
+        display: flex;
+        justify-content: center;
 }
 
 /*Footer*/
@@ -311,11 +315,11 @@ footer p {
     filas y columnas*/
     padding-top: 200px;
         display: grid;
-        grid-template-columns:repeat(auto-fit, 300px);
+        grid-template-columns:repeat(auto-fit, 400px);
         /*Auto-fit crea tantas columnas como necesitemos
         del ancho especificado*/
-        grid-template-rows: repeat(2, 400px);
-        grid-gap: 40px;
+        grid-template-rows: repeat(1, 500px);
+        grid-gap: 80px;
         justify-content: space-around;
 }
 
@@ -324,6 +328,8 @@ footer p {
         height: 500px;
         box-shadow: 2px 2px 4px grey;
         background-color: burlywood;
+        display: grid;
+        
 }
     
 .imagen {
@@ -347,13 +353,13 @@ footer p {
 }
 
 .btn {
-        background-color: crimson;
+        background-color: rgb(197, 20, 220);
         color: white;
-        font-size: 16px;
+        font-size: 20px;
         padding: 5px;
         border-radius: 10px;
         text-decoration: none;
-        border-bottom: 4px solid rgb(82, 4, 4);
+        border-bottom: 4px solid rgb(198, 98, 238)18);
 }
 
 .btn:hover {
@@ -517,5 +523,48 @@ header .burguer {
         font-size: 30px;
     }
     
+}
+
+@media (max-width :320px) {
+    body {
+        font-size: 10px;
+    }
+    .hero h1 {
+        font-size:20px;
+    }
+    .hero h2 {
+        font-size:18px;
+    }
+    .fila {
+        padding: 16px 14px;
+    }
+    .fila a {
+        font-size: 14px;
+    }
+    .fila div img {
+        height: 80px;
+    }
+    .slogan {
+        font-size:14px;
+    }
+    .col100 .newsletter {
+        padding: 4px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .input_news, .input_sub {
+        font-size:14px;
+        padding: 8px;
+        margin: 4px 4px 4px 4px;
+    }
+    .dcha a {
+        font-size: 30px;
+    }
+    .col1 .izda{
+        font-size: 30px;
+    }
+    .minifooter p {
+        font-size: 20px;
+    }
 }
 

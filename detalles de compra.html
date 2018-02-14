@@ -7,6 +7,7 @@
     <title>Detalles de Compra</title>
     <link rel="stylesheet" href="./css/detalles de compra.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     
 </head>
 <body>
@@ -65,18 +66,12 @@
         <button class="pagina">3</button>
         <button class="pagina">4</button>
         <button class="pagina">5</button>
-        <button class="pagina">6</button>
-        <button class="pagina">7</button>
-        <button class="pagina">8</button>
-        <button class="pagina">9</button>
-        <button class="pagina">10</button>
         <button class="derecha">Siguiente</button> 
     </div>    
 <br>
         <h1>Qué tiene el castillo</h1>
         <p>
             Año de construcción 1965.
-        <i></i>
             Cuartos 8, 7, Baños 7 ,
             Superficie habitable aprox. 1.097 m², Superficie construida aprox. 1.284 m²,
             Terreno aprox. 6.029 m², Terraza 300 m²,
@@ -98,40 +93,42 @@
                 </p>
             <br>
         <h1>Donde está situado</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6153.501302200556!2d2.385348926590841!3d39.54267871790505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129826acde8d8819%3A0x34d0f5ed2e6f3871!2s07157+Puerto+de+Andrach%2C+Islas+Baleares!5e0!3m2!1ses!2ses!4v1518451425047" 
-        width="600" height="450" 
-        frameborder="0" style="border:0" 
-        allowfullscreen></iframe>
+        <div class="caja">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6153.501302200556!2d2.385348926590841!3d39.54267871790505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129826acde8d8819%3A0x34d0f5ed2e6f3871!2s07157+Puerto+de+Andrach%2C+Islas+Baleares!5e0!3m2!1ses!2ses!4v1518451425047" 
+                width="600" height="450" 
+                frameborder="0" style="border:0" 
+                allowfullscreen></iframe>
+        </div>
         <br>
+        <h1>Contáctenos</h1>
         <div class="conten">
-                <h1>Contáctenos</h1>
-            <form> 
-                <div class="fila">
-                    <div class="col50">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" 
-                                id="nombre" placeholder="Nombre">
+                <form> 
+                    <div class="fila">
+                        <div class="col50">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" 
+                                    id="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="col50">
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" name="apellidos" 
+                                    id="apellidos" placeholder="Apellidos">
+                        </div>
                     </div>
-                    <div class="col50">
-                        <label for="apellidos">Apellidos</label>
-                        <input type="text" name="apellidos" 
-                                id="apellidos" placeholder="Apellidos">
-                    </div>
-                </div>
-                <div class="fila">
-                    <div class="col50">
-                        <label for="telefono">Teléfono</label>
-                        <input type="number" name="telefono" 
-                                id="telefono" placeholder="Telefono">
-                    </div> 
-                    <div class="col50">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" name="mail" 
-                                id="email" placeholder="Correo electrónico">
-                    </div>
-                    <input type="submit" value="Enviar">
-                </div>       
-            </form>
+                    <div class="fila">
+                        <div class="col50">
+                            <label for="telefono">Teléfono</label>
+                            <input type="number" name="telefono" 
+                                    id="telefono" placeholder="Telefono">
+                        </div> 
+                        <div class="col50">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" name="mail" 
+                                        id="email" placeholder="Correo electrónico">
+                        </div>
+                        <input type="submit" value="Enviar">
+                        </div>       
+                </form>
         </div>
     <br>
 <footer>
@@ -154,7 +151,7 @@
             </div>
             <div class="legales">
                 <a href="contacto.html#aviso">Aviso Legal</a>
-                    <a href="contacto.html#cookies">Cookies</a>
+                <a href="contacto.html#cookies">Cookies</a>
             </div>
             <div class="col100 minifooter">
                 <p>&copy; 2018 Inmobiliaria Costa Sol, S.A.</p>

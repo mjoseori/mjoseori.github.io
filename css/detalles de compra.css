@@ -52,21 +52,33 @@ header nav ul li {
 
 .contenedor {
     margin-top: 120px;
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, 300px);
+    /*Auto-fit crea tantas columnas como necesitemos
+    del ancho especificado*/
+    grid-template-rows: repeat(2, 400px);
+    grid-gap: 40px;
+    justify-content: space-around;
+
+}
+
+img {
+    /* width: 100%;  */
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.caja {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
 }
-
-img.contenedor {
-    width: 100%;
-}
-
 .paginacion {
-display: flex;
-flex-direction: row;
-justify-content: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .pagina {
@@ -86,12 +98,11 @@ button {
 
 h1 {
     text-align: center;
-    padding: 20px;
     color: blueviolet;
 }
 
 p {
-    padding: 10px;
+    padding: 30px;
     line-height: 1.5em;
     color: darkblue;
 }
@@ -103,7 +114,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 100%;
 }
 
 .fila {
@@ -125,6 +136,8 @@ form {
     box-shadow: 4px, 4px,16 rgb(152, 20, 156);
     border-radius: 20px;
     z-index: 1;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 /*footer*/
@@ -337,4 +350,48 @@ header .burguer {
     }
     
 }
+
+@media (max-width :320px) {
+    body {
+        font-size: 10px;
+    }
+    .hero h1 {
+        font-size:20px;
+    }
+    .hero h2 {
+        font-size:18px;
+    }
+    .fila {
+        padding: 16px 14px;
+    }
+    .fila a {
+        font-size: 14px;
+    }
+    .fila div img {
+        height: 80px;
+    }
+    .slogan {
+        font-size:14px;
+    }
+    .col100 .newsletter {
+        padding: 4px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .input_news, .input_sub {
+        font-size:14px;
+        padding: 8px;
+        margin: 4px 4px 4px 4px;
+    }
+    .dcha a {
+        font-size: 30px;
+    }
+    .col1 .izda{
+        font-size: 30px;
+    }
+    .minifooter p {
+        font-size: 20px;
+    }
+}
+
 

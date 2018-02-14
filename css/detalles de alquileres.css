@@ -1,6 +1,6 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -9,7 +9,7 @@ body {
     color: rgb(141, 5, 153);
 }
 
-/*Cabecera con logo y barra de navegacion*/
+/*Cabecera con logo y barra de navegación*/
 
 header {
     display: flex;
@@ -17,26 +17,10 @@ header {
     justify-content: space-between;
     height: 100px;
     align-items: center;
-    padding: 20px;
+    padding:20px;
     position: absolute;
     top: 0;
     width: 100%;
-}
-
-header a img {
-    margin-top: 30px;
-   margin: 10px;
-   padding: 10px;
-
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-header nav ul li {
-    padding: 30px;
 }
 
 header .burguer {
@@ -51,11 +35,78 @@ header .burguer {
     align-items: center;
 }
 
+header a img {
+    margin-top: 30px;
+   margin: 10px;
+   padding: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 30px;
+}
+
+.contenedor {
+    margin-top: 120px;
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, 300px);
+    /*Auto-fit crea tantas columnas como necesitemos
+    del ancho especificado*/
+    grid-template-rows: repeat(2, 400px);
+    grid-gap: 40px;
+    justify-content: space-around;
+
+}
+
+img {
+    /* width: 100%;  */
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.caja {
+    display: flex;
+    justify-content: center;
+}
+.paginacion {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pagina {
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(241, 86, 241)
+}
+
+button {
+    background-color: rgb(241, 86, 241);
+    color: black;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+}
+
 p {
-    padding: 10px;
+    padding: 30px;
     line-height: 1.5em;
     color: darkblue;
 }
+
 
 /*Formulario*/
 
@@ -63,7 +114,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 100%;
 }
 
 .fila {
@@ -85,6 +136,8 @@ form {
     box-shadow: 4px, 4px,16 rgb(152, 20, 156);
     border-radius: 20px;
     z-index: 1;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 /*footer*/
@@ -150,3 +203,195 @@ footer p {
     align-items: center;
 
 }
+
+/* --------------------------------------------------------------------
+--------------------------------------------------------------------
+-------------------------------------------------------------------- */
+/* Media QUERIES */
+
+@media (min-width : 800px) {
+    footer .izda, footer .centro, footer .dcha {
+        flex-basis: 200px;}
+}
+        
+@media (max-width: 800px){
+    nav {display: none;
+}
+
+header .burguer {
+    display: initial;
+}
+
+    footer .izda, footer .centro, footer .dcha {
+        flex-basis: 200px;
+    }
+    
+}
+
+@media (max-width : 775px){
+    .separador {
+        display: initial;
+    }
+
+    /* Cambia la disposicion de las filas a columnas */
+    .fila {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Se disminuye un poco los margenes y el tamaño de los botones */
+    .boton{
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    /* Se disminuye el boton de submit */
+    .input_sub {
+        margin: 20px;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    /* Se resetea el basis de las columnas */
+    .col1 {
+        flex-basis: initial;
+    }
+
+
+    /* Se cambia el tamaño de las imagenes */
+    .fila div img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 640px){
+
+    /* Se cambia el tamaño del encabezado del hero */
+    .hero h1{
+        font-size: 36px;
+    }
+    
+    .hero h2{
+        font-size: 30px;
+    }
+
+    /* Se disminuye el boton de submit */
+    .input_sub {
+        margin: 20px;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    /* Se disminuye el tamaño del input-text */
+    .input_news {
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .ultima{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Se baja un poco el texto del footer para que no colapse con el boton */
+    .grande {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 450px){
+
+    /* Se disminuye el tamaño de letra general de la web */
+    body {
+        font-size: 18px;
+    }
+
+     /* Se cambia el tamaño del encabezado del hero */
+    .hero h1{
+        font-size: 26px;
+    }
+    
+    .hero h2{
+        font-size: 20px;
+    }
+
+    /* Se reduce el padding de las filas */
+    .fila {
+        padding: 20px 10px;
+    }
+
+    .fila a {
+        font-size: 16px;
+    }
+
+    .fila div img {
+        height: 160px;
+    }
+
+    .slogan {
+        font-size: 24px;
+    }
+
+    .col100 .newsletter {
+        padding: 5px;   
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .input_news, .input_sub {
+        font-size: 16px;
+        padding: 10px;
+        margin: 5px 5px 20px 5px;
+    }
+
+    .dcha a {
+        font-size: 30px;
+    }
+    
+}
+
+@media (max-width :320px) {
+    body {
+        font-size: 10px;
+    }
+    .hero h1 {
+        font-size:20px;
+    }
+    .hero h2 {
+        font-size:18px;
+    }
+    .fila {
+        padding: 16px 14px;
+    }
+    .fila a {
+        font-size: 14px;
+    }
+    .fila div img {
+        height: 80px;
+    }
+    .slogan {
+        font-size:14px;
+    }
+    .col100 .newsletter {
+        padding: 4px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .input_news, .input_sub {
+        font-size:14px;
+        padding: 8px;
+        margin: 4px 4px 4px 4px;
+    }
+    .dcha a {
+        font-size: 30px;
+    }
+    .col1 .izda{
+        font-size: 30px;
+    }
+    .minifooter p {
+        font-size: 20px;
+    }
+}
+
+
